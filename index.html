@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('imagenes/imagen1.jpg');
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header, nav, main {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #a45d83;
+            padding: 5px;
+        }
+
+        nav {
+            background-color: #ffcde8;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        button {
+            margin: 0;
+            background: transparent;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            position: relative;
+        }
+
+        .foto-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .foto {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .visor-imagen {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imagen-actual {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .cerrar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        #left-box {
+            width: 100%;
+            max-width: 400px; 
+        }
+
+        video {
+            width: 55%;
+            height: auto;
+        }
+
+        .personaje {
+            width: 150px;
+            height: auto;
+            position: absolute;
+            bottom: 50px;
+            left: -50px;
+        }
+
+        #subtitulos {
+            position: absolute;
+            top: 80px;
+            right: 100px;
+            max-width: 300px;
+            color: white;
+            overflow: hidden;
+
+        }
+    </style>
+
+    <link rel="icon" href="icono1.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <h1>🍩 ⋆ 🍎  🎀  𝕤𝕠𝕟𝕣𝕚𝕖 𝕡𝕣𝕖𝕔𝕚𝕠𝕟𝕤𝕒 🎀  🍎 ⋆ 🍩</h1>
+    </header>
+
+    <nav>
+        <button onclick="window.location.href='codigos/video.html'">VIDEOS</button>
+        <button onclick="window.location.href='codigos/fotos.html'">FOTOS</button>
+        <button onclick="window.location.href='codigos/recetas.html'">RECETAS</button>
+        
+    </nav>
+
+    <main>
+        <div id="left-box">
+            <video autoplay controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div>
+            <img src="personaje.gif" alt="Personaje animado" class="personaje">
+        </div>
+
+        <div id="subtitulos">
+            <p>🎂 ⋆ 🍇  🎀  𝐿𝒜 𝒩𝐼Ñ𝒜 𝑀𝒜𝒮 𝐻𝐸𝑅𝑀💍𝒮𝒜 𝒴 𝒯𝐸𝑅𝒞𝒜  🎀  🍇 ⋆ 🎂</p>
+            <p>🍎 ⋆ 🍎  🎀  𝑒𝓇𝑒𝓈 𝓁𝒶 𝓂𝓊𝒿𝑒𝓇 𝓆𝓊𝑒 𝓂𝑒 𝒽𝒶𝒸𝑒 𝓂𝓊𝓎 𝒻𝑒𝓁𝒾𝓏 𝑒𝓈𝓉𝑒 𝓃𝓊𝑒𝓋😍 𝒶ñ😎 𝓆𝓊𝒾𝑒𝓇♡   𝓉𝓇𝒾𝓊𝓃𝒻𝒶𝓇 𝒿𝓊𝓃𝓉😎 𝒶 𝓉𝓊 𝓁𝒶𝒹🌺 𝓋𝒶𝓂♡𝓈 𝒶 𝒸🌸𝓂𝓅𝓁𝑒𝓉𝒶𝓇 𝓂𝓊𝒸𝒽𝒶𝓈 𝓂𝑒𝓉𝒶𝓈 𝓊𝓃𝒾𝒹☯𝓈 𝓂𝑒𝒿🌸𝓇𝒶𝓃𝒹☯ 𝓎 𝒶𝓋𝒶𝓃𝓏𝒶𝓃𝒹✌️  🎀  🍎 ⋆ 🍎</p>
+
+
+
+
+
+            <!-- Agrega más subtítulos según sea necesario -->
+
+        </div>
+
+
+    </main>
+
+</body>
+</html>

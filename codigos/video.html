@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('../imagenes/imagen1.jpg');
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Fondo fijo al hacer scroll */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header, nav, main {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #a45d83;
+            padding: 5px;
+        }
+
+        nav {
+            background-color: #ffcde8;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 100px;
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        button {
+            margin: 0;
+            background: transparent;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+
+      .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Alinea verticalmente en el centro */
+    height: 100vh; /* Ajusta la altura al 100% del viewport para centrar verticalmente */
+    margin-left: 20px; /* Ajusta el margen izquierdo para mover el cuadro hacia la izquierda */
+}
+
+.video-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row; /* Ajusta la dirección del flex a fila */
+    align-items: center; /* Alinea el contenido verticalmente al centro */
+    justify-content: center; /* Alinea el contenido horizontalmente al centro */
+    margin-bottom: 20px; /* Espaciado entre videos */
+    max-width: 600px; /* Ajusta el ancho máximo del contenedor de video según tu diseño */
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto; /* Mueve el cuadro a la derecha */
+    margin-right: auto; /* Mueve el cuadro a la izquierda */
+}
+
+
+video {
+    width: 20%; /* Ancho del video ajustado para que sea más pequeño */
+    border-radius: 5px;
+}
+
+.video-info {
+    flex-grow: 1;
+    padding-left: 20px; /* Espaciado entre el video y la información */
+    text-align: left;
+}
+
+
+.personaje img {
+    width: 180px; /* Ajusta el ancho del personaje según tus necesidades */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+.personaje {
+    position: fixed;
+    top: 70%;
+    right: 10px; /* Ajusta la distancia del personaje desde el borde derecho */
+    transform: translateY(-50%);
+    z-index: 1; /* Asegura que el personaje esté en frente del contenido principal */
+}
+
+
+
+    </style>
+</head>
+
+    <link rel="icon" href="icono1.png" type="image/png">
+
+<body>
+
+
+
+
+    <header>
+        <h1>🍩 ⋆ 🍎  🎀  Videos 🎀  🍎 ⋆ 🍩</h1>
+    </header>
+
+    <nav>
+        <button onclick="window.location.href='../index.html'">Inicio</button>
+    </nav>
+
+
+    <aside class="personaje">
+    <img src="personaje1.gif" alt="Personaje animado">
+    </aside>
+
+
+
+
+
+    <main>
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/1.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>🐇 ⋆ 🐰  🎀  𝓂𝒾 𝒻𝑒𝓁𝒾𝒸𝒾𝒹𝒶𝒹  🎀  🐰 ⋆ 🐇</h2>
+                <p>𝕋𝕦 𝕒𝕝𝕖𝕘𝕣í𝕒 𝕖𝕤 𝕔𝕠𝕞𝕠 𝕦𝕟 𝕣𝕒𝕪𝕠 𝕕𝕖 𝕤𝕠𝕝 𝕢𝕦𝕖 𝕚𝕝𝕦𝕞𝕚𝕟𝕒 𝕚𝕟𝕔𝕝𝕦𝕤𝕠 𝕝𝕠𝕤 𝕕í𝕒𝕤 𝕞á𝕤 𝕘𝕣𝕚𝕤𝕖𝕤. 𝔻𝕖𝕤𝕕𝕖 𝕖𝕝 𝕞𝕠𝕞𝕖𝕟𝕥𝕠 𝕖𝕟 𝕢𝕦𝕖 𝕖𝕟𝕥𝕣𝕒𝕤 𝕖𝕟 𝕝𝕒 𝕙𝕒𝕓𝕚𝕥𝕒𝕔𝕚ó𝕟, 𝕥𝕦 𝕖𝕟𝕖𝕣𝕘í𝕒 𝕡𝕠𝕤𝕚𝕥𝕚𝕧𝕒 𝕔𝕠𝕟𝕥𝕒𝕘𝕚𝕒 𝕒 𝕥𝕠𝕕𝕠𝕤 𝕒 𝕥𝕦 𝕒𝕝𝕣𝕖𝕕𝕖𝕕𝕠𝕣.</p>
+            </div>
+        </div>
+
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/2.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>☜🔥  мเ ᵖℝＩⓝ𝒸𝓔𝓢𝓐  ♝🍓</h2>
+                <p>ᴛᴇ ᴀᴍᴏ ᴅᴇ ᴅɪꜰᴇʀᴇɴᴛᴇꜱ ᴍᴀɴᴇʀᴀꜱ ᴀᴜɴQᴜᴇ ʟᴀꜱ ᴄᴏꜱᴀꜱ ꜱᴇ ᴄᴏᴍᴘʟɪᴄᴀɴ ɴᴏ ᴅᴇᴊᴀʀᴇ ᴅᴇ ᴠᴇʀᴛᴇ ᴄᴏᴍᴏ ᴍɪ ᴘʀɪɴᴄᴇꜱᴀ ᴀᴜɴQᴜᴇ ᴘᴀꜱᴇɴ ᴍɪʟ ᴄᴏꜱᴀꜱ ᴍᴇ Qᴜᴇᴅᴀʀᴇ ᴄᴏɴᴛɪɢᴏ ʜᴀꜱᴛᴀ ᴇʟ ꜰɪɴᴀʟ</p>
+            </div>
+        </div>
+
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/3.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>¸,ø¤º°   🎀  𝓉𝑒 𝓁𝒶 𝒹𝑒𝒹𝒾𝒸😍  🎀   °º¤ø,¸</h2>
+                <p>𝐭𝐞 𝐚𝐦𝐨 𝐝𝐞 𝐭𝐚𝐧𝐭𝐚𝐬 𝐦𝐚𝐧𝐞𝐫𝐚𝐬 𝐪𝐮𝐞 𝐧𝐨 𝐬𝐚𝐛𝐫𝐢𝐚 𝐜𝐨𝐦𝐨 𝐞𝐱𝐩𝐥𝐢𝐜𝐚𝐫𝐥𝐨 𝐩𝐨𝐫𝐪𝐮𝐞 𝐞𝐬 𝐚𝐥𝐠𝐨 𝐪𝐮𝐞 𝐬𝐨𝐥𝐨 𝐬𝐢𝐞𝐧𝐭𝐨 𝐚𝐮𝐧𝐪𝐮𝐞 𝐧𝐨 𝐬𝐞 𝐩𝐮𝐞𝐝𝐚 𝐝𝐞𝐜𝐢𝐫 𝐜𝐨𝐧 𝐩𝐚𝐥𝐚𝐛𝐫𝐚𝐬 𝐭𝐞 𝐥𝐚𝐬 𝐩𝐮𝐞𝐝𝐨 𝐦𝐨𝐬𝐭𝐫𝐚𝐫 𝐜𝐨𝐧 𝐚𝐜𝐭𝐨𝐬 𝐯𝐚𝐥𝐨𝐫𝐚𝐧𝐝𝐨𝐭𝐞 𝐲 𝐜𝐮𝐢𝐝𝐚𝐧𝐝𝐨𝐭𝐞</p>
+            </div>
+        </div>
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/4.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>ൠ💞  𝓢𝓞ϻ𝔬丂 𝓵𝐨¢όｓ  ♨😳</h2>
+                <p>˜”*°•.˜”*°• hemos pasado por muchas cosas apesar de todo hemos empezado a mejorar y logramos conocernos muy bien sabes como hacerme renegar asi como yo se como estresarte somo muy locos cuando bailamos juntos nos divertimos y peleamos pero como toda pareja siempre lo solucionamos despues de bromas y fastidios no quiero dejar de ser feliz a tu lado asi que espero que me dejes seguir creciendo a tu lado •°*”˜.•°*”˜</p>
+            </div>
+        </div>
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/5.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>🍓 ⋆ 🍒  🎀  𝓈𝑒𝓇𝒶 𝒹𝒾𝒻𝒾𝒸𝒾𝓁  🎀  🍒 ⋆ 🍓</h2>
+                <p>𝕝𝕒𝕤 𝕔𝕠𝕤𝕒𝕤 𝕤𝕖 𝕡𝕠𝕟𝕕𝕣𝕒𝕟 𝕞𝕦𝕪 𝕔𝕠𝕞𝕡𝕝𝕚𝕔𝕒𝕕𝕒𝕤 𝕙𝕒𝕓𝕣𝕒 𝕞𝕠𝕞𝕖𝕟𝕥𝕠𝕤 𝕖𝕟 𝕝𝕠𝕤 𝕔𝕦𝕒𝕝𝕖𝕤 𝕟𝕠 𝕞𝕖 𝕤𝕠𝕡𝕠𝕣𝕥𝕖𝕤 𝕪 𝕒 𝕤𝕦 𝕧𝕖𝕫 𝕥𝕒𝕞𝕓𝕚𝕖𝕟 𝕞𝕠𝕞𝕖𝕟𝕥𝕠𝕤 𝕖𝕟 𝕕𝕠𝕟𝕕𝕖 𝕪𝕠 𝕟𝕠 𝕥𝕖 𝕒𝕘𝕦𝕒𝕟𝕥𝕖 𝕙𝕒𝕪 𝕖𝕟 𝕖𝕤𝕠𝕤 𝕞𝕠𝕞𝕖𝕟𝕥𝕠𝕤 𝕤𝕖𝕣𝕒 𝕔𝕦𝕒𝕟𝕕𝕠 𝕤𝕖 𝕔𝕠𝕞𝕡𝕣𝕦𝕖𝕓𝕖 𝕟𝕦𝕖𝕤𝕥𝕣𝕠 𝕧𝕖𝕣𝕕𝕒𝕕𝕖𝕣𝕠 𝕒𝕞𝕠𝕣 𝕙𝕒𝕪 𝕤𝕒𝕓𝕣𝕖𝕞𝕠𝕤 𝕢𝕦𝕖 𝕥𝕖𝕟𝕕𝕣𝕖𝕞𝕠𝕤 𝕢𝕦𝕖 𝕒𝕘𝕦𝕒𝕟𝕥𝕒𝕣 𝕞𝕦𝕔𝕙𝕠 𝕤𝕚 𝕢𝕦𝕖𝕣𝕖𝕞𝕠𝕤 𝕤𝕒𝕝𝕚𝕣 𝕒𝕕𝕖𝕝𝕒𝕟𝕥𝕖 𝕤𝕖𝕣𝕒 𝕕𝕚𝕗𝕚𝕔𝕚𝕝 𝕔𝕠𝕞𝕠 𝕥𝕖 𝕝𝕠 𝕕𝕚𝕛𝕖 𝕡𝕖𝕣𝕠 𝕒𝕝 𝕗𝕚𝕟𝕒𝕝 𝕝𝕠 𝕧𝕒𝕞𝕠𝕤 𝕒 𝕔𝕠𝕟𝕤𝕖𝕘𝕦𝕚𝕣 𝕞𝕚 𝕒𝕞𝕠𝕣.</p>
+            </div>
+        </div>
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/6.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>▀▄▀▄▀▄   🎀  𝓆𝓊𝒾𝑒𝓇💞 𝓆𝓊𝑒 𝓈𝑒𝒶𝓈 𝓉𝓊  🎀   ▄▀▄▀▄▀</h2>
+                <p>ʟᴀꜱ ᴄᴏꜱᴀꜱ ᴇɴ ᴜɴᴀ ʀᴇʟᴀᴄɪᴏɴ ɴᴏ ꜱᴏɴ ꜱɪᴍᴘʀᴇ ʙᴇꜱᴏꜱ ʏ ᴀʙʀᴀᴢᴏꜱ ʜᴀʏ ʏ ʜᴀʙʀᴀ ᴍᴜᴄʜᴏꜱ ᴘʀᴏʙʟᴇᴍᴀꜱ ʏ ᴅɪꜱᴄᴜᴄɪᴏɴᴇꜱ ᴘᴇʀᴏ ᴀʟ ꜰɪɴᴀʟ ʜᴀʏ ᴍᴜᴄʜᴏ ᴀᴍᴏʀ ʀᴇᴄᴜᴇʀᴅᴀ ɴᴏ ꜱɪᴇᴍᴘʀᴇ ꜱᴇɴᴛɪʀᴀꜱ Qᴜᴇ ᴍᴇ ᴀᴍᴀꜱ ᴀʟ ɪɢᴜᴀʟ Qᴜᴇ ʏᴏ ɴᴏ ꜱɪᴇᴍᴘʀᴇ ꜱᴇɴᴛɪʀᴇ Qᴜᴇ ᴛᴇ ᴀᴍᴏ ᴘᴇʀᴏ ꜱɪᴇᴍᴘʀᴇ ɴᴏꜱ ᴀᴍᴀʀᴇᴍᴏꜱ, ᴇꜱ ᴅɪꜰɪᴄʟ ᴅᴇ ᴇxᴘʟɪᴄᴀʀ ᴘᴇʀᴏ ᴀᴜɴQᴜᴇ ɴᴏ ʟᴏ ꜱɪɴᴛᴀᴍᴏꜱ ᴀʟɢᴜɴᴀꜱ ᴠᴇᴄᴇꜱ Qᴜᴇ ɴᴏꜱ ᴀᴍᴀᴍᴏꜱ ᴘᴏʀ ᴀʟɢᴜɴᴀ ᴅɪꜱᴄᴜᴄɪᴏɴ ᴏ ᴄᴏꜱᴀꜱ ᴀꜱɪ ᴇꜱᴏ ɴᴏ ɪᴍᴘᴏʀᴛᴀ ᴘᴏʀQᴜᴇ ᴀʟ ꜰɪɴᴀʟ ᴅᴇ ᴄᴜᴇɴᴛᴀ ᴄᴜᴀɴᴅᴏ ɴᴏꜱ ᴄᴀʟᴍᴀᴍᴏꜱ ꜱᴀʙᴇᴍᴏꜱ Qᴜᴇ ᴅᴇ ᴠᴇʀᴅᴀᴅ ɴᴏꜱ ᴀᴍᴀᴍᴏꜱ ᴘᴏʀ ᴇꜱᴏ ꜱɪᴇᴍᴘʀᴇ ᴛᴇɴᴇᴍᴏꜱ Qᴜᴇ ᴛᴇɴᴇʀ ᴇɴ ᴄᴜᴇɴᴛᴀ ᴇꜱᴏ ᴀᴜɴQᴜᴇ ɴᴏ ꜱɪᴇᴍᴘʀᴇ ʟᴏ ꜱɪɴᴛᴀᴍᴏꜱ ᴅᴇʙᴇᴍᴏꜱ ʀᴇᴄᴏʀᴅᴀʀ Qᴜᴇ ɴᴏꜱ ᴀᴍᴀᴍᴏꜱ</p>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/7.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>.★  🎀  𝓉𝑒 𝒶𝓂❤  🎀  ★.</h2>
+                <p>Qᴜᴇ ᴛᴇ ᴘᴜᴇᴅᴏ ᴅᴇᴄɪʀ ᴛᴇ ᴀᴍᴏ ʏ ᴀᴜɴQᴜᴇ ᴍᴇ ᴅᴇꜱ ᴄᴏʟᴇʀᴀ ᴀᴠᴇᴄᴇꜱ ꜱᴏʏ ᴍᴜʏ ꜰᴇʟɪᴢ ᴀ ᴛᴜ ʟᴀᴅᴏ ᴍɪ ᴘʀɪɴᴄᴇꜱᴀ ᴛᴇ ᴀᴍᴏ</p>
+            </div>
+        </div>
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/8.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>🍧  🎀  𝑒𝓈𝓉♡ 𝓉𝑒 𝒶𝓇𝒶 𝓇𝑒𝒾𝓇  🎀  🍧</h2>
+                <p>ᴍᴇ ɢᴜꜱᴛᴀ ᴇꜱᴄᴜᴄʜᴀʀ ᴇꜱᴛᴇ ꜱᴏɴɪᴅᴏ ᴍᴇ ʀᴇʟᴀᴊᴀ ᴄᴜᴀɴᴅᴏ ᴍᴇ ᴇꜱᴛʀᴇꜱᴏ ᴇꜱᴘᴇʀᴏ Qᴜᴇ ᴛᴇ ɢᴜꜱᴛᴇ </p>
+            </div>
+        </div>
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/9.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>🍌  🎀  𝒿𝓊𝓃𝓉😍𝓈 𝒸💗𝓃𝓉𝓇𝒶 𝑒𝓁 𝓂𝓊𝓃𝒹💍  🎀  🍌</h2>
+                <p>tu y yo afrontando todo lo que se nos vendra en el camino jajaja </p>
+            </div>
+        </div>
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/10.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>⚛✴  🎀  𝒸𝓊𝒶𝓃𝒹👌 𝒸😻𝒸𝒾𝓃𝒶𝓂🍩𝓈  🎀  ✴⚛</h2>
+                <p>siempre tiene que pasar algo cuando cocinamos jaja espero que podamos salir ilesos la proxima vez</p>
+            </div>
+        </div>
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/11.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>•?((¯°·._.•   🎀  𝓉𝓊 𝓎 𝓎❤  🎀   •._.·°¯((?•</h2>
+                <p>ᴄᴜᴀɴᴅᴏ ɴᴏꜱ ᴄᴏɴᴏᴄɪᴍᴏꜱ ɴᴏ ꜱᴜᴘɪᴍᴏꜱ Qᴜᴇ ꜱᴇʀɪᴀᴍᴏꜱ ᴍᴇᴊᴏʀᴇꜱ ᴀᴍɪɢᴏꜱ ɴɪ ᴍᴜᴄʜᴏ ᴍᴇɴᴏꜱ Qᴜᴇ ꜱᴇʀɪᴀᴍᴏꜱ ɴᴏᴠɪᴏꜱ ʏ ꜰᴜᴛᴜʀᴏꜱ ᴇꜱᴘᴏꜱᴏꜱ, ᴀʜᴏʀᴀ ᴇꜱᴛᴀᴍᴏꜱ ꜰᴇʟɪᴄᴇꜱ ʏᴀ ᴘᴀꜱᴀᴍᴏꜱ ʟᴀ ɴᴀᴠɪᴅᴀᴅ ᴊᴜɴᴛᴏꜱ ʏ ᴇꜱᴛᴀᴍᴏꜱ ᴇɴ ᴄᴀᴍɪɴᴏ ᴀ ᴘᴀꜱᴀʀ ᴀÑᴏ ɴᴜᴇᴠᴏ ʟᴏꜱ ᴅᴏꜱ, ꜱᴏʏ ᴍᴜʏ ꜰᴇʟɪᴢ <3 </p>
+            </div>
+        </div>
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/12.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>🐻 ⋆ 🐷  🎀  𝑒𝓈𝓉𝒶𝓇𝑒 𝒽𝒶𝓎 𝒸💗𝓃𝓉𝒾𝑔🌸 𝓈𝒾𝑒𝓂𝓅𝓇𝑒  🎀  🐷 ⋆ 🐻</h2>
+                <p>ꜱᴏʟᴏ ᴛᴜ ʏ ʏᴏ ꜱᴀʙᴇᴍᴏꜱ ᴛᴏᴅᴏ ʟᴏ Qᴜᴇ ᴛᴜʙɪᴍᴏꜱ Qᴜᴇ ᴘᴀꜱᴀʀ ᴘᴀʀᴀ ᴇꜱᴛᴀʀ ᴊᴜɴᴛᴏꜱ  ᴀʜᴏʀᴀ ᴇꜱ ᴇʟ ᴍᴏᴍᴇɴᴛᴏ ᴅᴇ ᴛᴇɴᴇʀ ᴇɴ ᴄᴜᴇɴᴛᴀ Qᴜᴇ ʏᴀ ʜɪᴄɪᴍᴏꜱ ʟᴏ ᴅɪꜰɪᴄɪʟ Qᴜᴇ ꜰᴜᴇ ᴇɴᴄᴏɴᴛʀᴀʀɴᴏꜱ ᴇɴ ᴍᴇᴅɪᴏ ᴅᴇ ᴍɪʟʟᴏɴᴇꜱ ᴅᴇ ᴘᴇʀꜱᴏɴᴀꜱ ᴀʜᴏʀᴀ ʜᴀɢᴀᴍᴏꜱ ʟᴏ ᴍᴀꜱ ꜰᴀᴄɪʟ, Qᴜᴇ ᴇꜱ ᴇʟ ᴄᴜɪᴅᴀʀɴᴏꜱ ʏ ᴀᴍᴀʀɴᴏꜱ.</p>
+            </div>
+        </div>
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/13.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>:  🎀  𝓂𝑒 𝑔𝓊𝓈𝓉𝒶 𝑒𝓈𝓉𝒶 𝒸𝒶𝓃𝒸𝒾❤𝓃  🎀  :</h2>
+                <p>Qᴜɪᴇʀᴏ Qᴜᴇ ʟᴀ ᴇꜱᴄᴜᴄʜᴇꜱ ᴛᴀʟ ᴠᴇᴢ ɴᴏ ᴅᴇꜱᴄʀɪʙᴇ ᴍᴜᴄʜᴏ ᴄᴏᴍᴏ ꜰᴜᴇ ɴᴜᴇꜱᴛʀᴀ ᴠɪᴅᴀ ᴘᴇʀᴏ ᴄᴜᴀɴᴅᴏ ᴇꜱᴄᴜᴄʜᴏ ᴀʟɢᴜɴᴀꜱ ᴘᴀʀᴛᴇꜱ ꜱᴏʟᴏ ᴘɪᴇɴꜱᴏ ᴇɴ ᴛɪ, ᴘᴏʀ ᴛɪ ɴᴀᴅᴀʀɪᴀ ʟᴏꜱ 7 ᴍᴀʀᴇꜱ, ᴘʀᴏᴍᴇᴛᴏ ᴇꜱᴛᴀʀ ᴄᴏɴᴛɪɢᴏ ʜᴀꜱᴛᴀ Qᴜᴇ ʟᴀ ᴍᴜᴇʀᴛᴇ ɴᴏꜱ ꜱᴇᴘᴀʀᴇ.</p>
+            </div>
+        </div>
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/14.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>🐭  🎀  𝓃𝓊𝑒𝓈𝓉𝓇🌺𝓈 𝓇𝑒𝒸𝓊𝑒𝓇𝒹😊𝓈  🎀  🐭</h2>
+                <p>ᴘᴏᴄᴏ ᴀ ᴘᴏᴄᴏ ɪʀᴇᴍᴏꜱ ᴛᴇɴɪᴇɴᴅᴏ ᴍᴀꜱ ʀᴇᴄᴜᴇʀᴅᴏ ᴊᴜɴᴛᴏꜱ ɪʀᴇᴍᴏꜱ ᴅᴇ ᴠɪᴀᴊᴇ ʏ ᴠᴇʀᴇᴍᴏꜱ ᴍᴜᴄʜᴏꜱ ʟᴜɢᴀʀᴇꜱ ᴘᴇʀᴏ ɴᴜɴᴄᴀ ᴏʟᴠɪᴅᴀʀᴇᴍᴏꜱ ᴄᴏᴍᴏ ᴄᴏᴍᴇɴᴢᴀᴍᴏꜱ ꜱɪᴇɴᴅᴏ ᴍᴇᴊᴏʀᴇꜱ ᴀᴍɪɢᴏꜱ ʜᴀɢᴀᴍᴏꜱ Qᴜᴇ ɴᴜᴇꜱᴛʀᴏ ᴍᴜɴᴅᴏ ᴀʜᴏʀᴀ ꜱᴇᴀ ᴍᴜᴄʜᴏ ᴍᴇᴊᴏʀ.</p>
+            </div>
+        </div>
+
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/15.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>✴✳  🎀  𝓃𝓊𝑒𝓈𝓉𝓇𝒶 𝓅𝓇𝒾𝓂𝑒𝓇𝒶 𝓃𝒶𝓋𝒾𝒹𝒶𝒹 𝒿𝓊𝓃𝓉🌸𝓈  🎀  ✳✴</h2>
+                <p>ʜᴀᴄᴇ ᴘᴏᴄᴏ ᴘᴀꜱᴀᴍᴏꜱ ɴᴜᴇꜱᴛʀᴀ ᴘʀɪᴍᴇʀᴀ ɴᴀᴠɪᴅᴀᴅ ᴊᴜɴᴛᴏꜱ ʟᴀ ᴘʀɪᴍᴇʀᴀ ᴅᴇ ᴍᴜᴄʜᴀꜱ ᴍᴀꜱ Qᴜᴇ ᴘᴀꜱᴀʀᴇᴍᴏꜱ ᴊᴜɴᴛᴏꜱ ᴀᴜɴQᴜᴇ ʟᴀꜱ ᴄᴏꜱᴀꜱ ꜱᴇ ᴄᴏᴍᴘʟɪQᴜᴇɴ ᴊᴀᴍᴀꜱ ᴏʟᴠɪᴅᴇᴍᴏꜱ ᴇꜱᴇ ᴅɪᴀ ᴀᴜɴQᴜᴇ ɴᴏ ʟᴏ ᴍᴀʟᴏ ꜱɪɴᴏ ʟᴏ ʙᴜᴇɴᴏ Qᴜᴇ ᴠɪᴠɪᴍᴏꜱ ɴᴜᴇꜱᴛʀᴏꜱ ᴍᴏᴍᴇɴᴛᴏꜱ ᴇɴ ꜰᴀᴍɪʟɪᴀ ʏ ᴊᴜɴᴛᴏꜱ ᴍɪ ᴀᴍᴏʀ.</p>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <video controls>
+                <source src="../videos/16.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h2>—(••÷  🎀  𝓈👌𝓁☯ 𝑒𝓈𝒸𝓊𝒸𝒽𝒶 𝑒𝓈𝓉𝑒 𝓋𝒾𝒹𝑒👌  🎀  ÷••(—</h2>
+                <p>ꜱᴏʟᴏ ᴇꜱᴄᴜᴄʜᴀʟᴏ ʏ ᴘɪᴇɴꜱᴀ ᴇɴ ʟᴀꜱ ᴘᴀʟᴀʙʀᴀꜱ, ᴛᴇ ᴀᴍᴏ</p>
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+</html>

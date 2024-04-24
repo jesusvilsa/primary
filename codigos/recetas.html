@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('../imagenes/imagen1.jpg');
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Fondo fijo al hacer scroll */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header, nav, main {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #a45d83;
+            padding: 5px;
+        }
+
+        nav {
+            background-color: #ffcde8;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 100px;
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        button {
+            margin: 0;
+            background: transparent;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Alinea verticalmente en el centro */
+            height: 100vh; /* Ajusta la altura al 100% del viewport para centrar verticalmente */
+            margin-left: 20px; /* Ajusta el margen izquierdo para mover el cuadro hacia la izquierda */
+        }
+
+        .receta-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row; /* Ajusta la dirección del flex a fila */
+            align-items: center; /* Alinea el contenido verticalmente al centro */
+            justify-content: center; /* Alinea el contenido horizontalmente al centro */
+            margin-bottom: 20px; /* Espaciado entre recetas */
+            max-width: 600px; /* Ajusta el ancho máximo del contenedor de receta según tu diseño */
+            width: 100%;
+            box-sizing: border-box;
+            margin-left: auto; /* Mueve el cuadro a la derecha */
+            margin-right: auto; /* Mueve el cuadro a la izquierda */
+        }
+
+        .receta-imagen {
+            width: 20%; /* Ancho de la imagen ajustado para que sea más pequeña */
+            border-radius: 5px;
+        }
+
+        .receta-info {
+            flex-grow: 1;
+            padding-left: 20px; /* Espaciado entre la imagen y la información de la receta */
+            text-align: left;
+        }
+    </style>
+</head>
+
+<link rel="icon" href="icono1.png" type="image/png">
+
+<body>
+
+    <header>
+        <h1>🍩 ⋆ 🍎 🎀 Recetas 🎀 🍎 ⋆ 🍩</h1>
+    </header>
+
+    <nav>
+        <button onclick="window.location.href='../index.html'">Inicio</button>
+    </nav>
+
+    <main>
+        <div class="receta-item">
+            <img class="receta-imagen" src="../imagenes/receta1.jpg" alt="Receta 1">
+            <div class="receta-info">
+                <h2>🍕 ⋆ 🍝 🎀 Panqueques 🎀 🍝 ⋆ 🍕</h2>
+                <p>Ingredientes:</p>
+                <ul>
+                    <li>pisca de mantequilla</li>
+                    <li>polvo de hornear</li>
+                    <li>2 huevos</li>
+                    <li>arina</li>
+                    <li>esencia de vainilla</li>
+                    <li>leche</li>
+                    <li>azucar</li>
+
+
+
+                </ul>
+                <p>Preparación:</p>
+                <ol>
+                    <li>en un envase mescla la leche y huevo junto a la escencia de vainilla</li>
+                    <li>hechar la arina y mezclar todo</li>
+                    <li>hechar el polvo de hornear y terminar de mezcal(entre mas polvo de hornear le heches se pone mas esponjoso, como maximo 2 cucharadas y media de polvo de hornear)</li>
+                    <li>al final hechale el azucar al gusto y prueba el que no se pase de dulce</li>
+                    <li>espera que el sarten caliente un poco a fuego muy bajo</li>
+                    <li>pon una pisca de mantequilla en el sarten</li>
+                    <li>al derretirse hecha la mezcla con cuidado y espera a que se dore a fuego muy bajo</li>
+                    <li>recuerda fijarte bien para darle la vuelta</li>
+                    
+                </ol>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
